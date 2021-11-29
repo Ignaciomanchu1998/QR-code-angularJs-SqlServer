@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Users";
+}
+
+<div class="text-center" ng-controller="usersCtrl">
+    <h1 class="display-4">Users </h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">QR Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="u in users">
+                <th>{{u.name}} {{u.lastName}}</th>
+                <td>
+                    <img src="{{u.qrocode}}" alt="QR code" width="200" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+@section Scripts{
+    <script src="~/js/controller/usersCtrl.js" asp-append-version="true"></script>
+}

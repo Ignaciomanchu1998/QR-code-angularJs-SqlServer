@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "angular.js@1.8.2",
+      "destination": "wwwroot/lib/angular.js/"
+    },
+    {
+      "library": "angular-sanitize@1.8.2",
+      "destination": "wwwroot/lib/angular-sanitize/"
+    }
+  ]
+}
